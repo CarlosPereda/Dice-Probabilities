@@ -3,9 +3,8 @@ from collections import Counter
 
 def get_dice_comb_prob(num, sides, throws=2, log_to_console=False):
     """
-    Prints the probability (in fractions and
-    percentage) of getting a specific sum throwing 
-    certain number of dices (of various sides).
+    Prints the probability (in fractions and percentage) of getting 
+    a specific sum throwing certain number of dices (of various sides).
 
     ----------------------------------------------
 
@@ -18,12 +17,11 @@ def get_dice_comb_prob(num, sides, throws=2, log_to_console=False):
 
     ----------------------------------------------
 
-    This func creates a list of lists that contain 
-    all the possible combinations of dices taking into 
-    considerations the number of sides and throws. 
-    Then, it gets the sum of each combination to 
-    obtain its frequency and divide this number
-    by the total number of possibilities. """
+    This func creates a list of lists that contain all the possible 
+    combinations of dices taking into considerations the number of 
+    sides and throws. Then, it gets the sum of each combination to 
+    obtain its frequency and divide this number by the total number 
+    of possibilities. """
 
     a, b, c = 1, 1, 1
     comb = [[] for n in range(sides**throws)]
